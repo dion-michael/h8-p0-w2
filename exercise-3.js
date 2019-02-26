@@ -37,7 +37,7 @@ else if(nama && peran){
 
     //=========== IF PERAN INVALID ===========
     else{
-        output =    'Halo, ' + nama + '. Di Dunia Proxytia tidak ada peran ' + peran.toLocaleUpperCase() +
+        output =    'Halo, ' + nama + '. Di Dunia Proxytia tidak ada peran ' + peran +
                     '. Silahkan pilih peran yang lain.'
     }
 }
