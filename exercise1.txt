@@ -2,53 +2,60 @@
 
 ======================================= 1 =======================================
 
-READ AND SAVE MASS EQUALS TO 600
-READ AND SAVE SPEED EQUALS TO 2
-READ AND SAVE RESULT
+READ AND SAVE 'mass' EQUALS TO 600
+READ AND SAVE 'speed' EQUALS TO 2
+READ AND SAVE 'result' EQUALS TO 0
 
-RESULT EQUALS TO MASS TIMES SPEED
-DISPLAY RESULT
+'result' EQUALS TO 'mass' TIMES 'speed'
+DISPLAY 'result'
 
 ======================================= 2 =======================================
 
-INPUT YEAR
-READ AND SAVE YEAR
-READ AND SAVE KABISAT EQUALS TO FALSE
+READ AND SAVE 'year'
+READ AND SAVE 'kabisat' EQUALS TO FALSE
 
-IF  YEAR MOD 4 EQUALS TO 0 AND YEAR MOD 100 NOT EQUAL TO 0
+IF  'year' MOD 4 EQUALS TO 0 AND 'year' MOD 100 NOT EQUAL TO 0
     OR
-    YEAR MOD 4 EQUALS TO 0 AND YEAR MOD 100 EQUALS TO 0 AND YEAR MOD 400 EQUAL TO 0
-        
-        KABISAT EQUALS TO TRUE
+    'year' MOD 4 EQUALS TO 0 AND 'year' MOD 100 EQUALS TO 0 AND 'year' MOD 400 EQUAL TO 0
+        'kabisat' EQUALS TO TRUE
+END IF
 
 ELSE
+    DO NOTHING BECAUSE 'kabisat' DEFAULT VALUE IS FALSE
+END ELSE
 
-    DO NOTHING BECAUSE KABISAT DEFAULT VALUE IS FALSE
-
-DISPLAY KABISAT
+DISPLAY 'kabisat'
 
 ======================================= 3 =======================================
 
-READ AND SAVE CLOTHES EQUALS TO 0
-
-LOOP CLOTHES UNTIL CLOTHES EQUAL TO 20
-    CLOTHES EQUALS TO CLOTHES PLUS 1
+READ AND SAVE 'clothes' EQUALS TO 1
+LOOP 'clothes' UNTIL 'clothes' EQUAL TO 20
     ADD CLOTHES TO LAUNDRY MACHINE
     IF CLOTHES EQUALS TO 20
         RUN LAUNDRY MACHINE
+    END IF
+    'x' EQUALS TO 'x' PLUS 1
+END LOOP
+    
 
 ======================================= 4 =======================================
 
-READ AND SAVE STUDENTS EQUALS TO 0
-READ AND SAVE LONGNAILS EQUALS TO FALSE
+READ AND SAVE 'students' EQUALS TO 1
+READ AND SAVE 'longnails' EQUALS TO FALSE
 
-LOOP STUDENTS UNTILL STUDENTS EQUAL TO 40
-    STUDENTS EQUAL TO STUDENTS PLUS 1
-    CHECK LONGNAILS
-    IF LONGNAILS EQUAL TO FALSE
+LOOP 'students' UNTILL 'students' EQUAL TO 40
+    COMPARE 'longnails' WITH 'students' NAILS
+    
+    IF 'longnails' EQUAL TO FALSE
         GIVE COMPLIMENTS
+    END IF
+
     ELSE
-        PUNISHMENT TIME!
+        GIVE PUNISHMENT
+    END ELSE
+
+    'students' EQUAL TO 'students' PLUS 1
+END LOOP
         
 
     

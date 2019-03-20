@@ -1,7 +1,9 @@
 function konversiMenit(menit) {
     // you can only write your code here!
     var hours = Math.floor(menit/60); //find hours without the decimal
+    console.log('jam',hours);
     var min = menit % 60; //find the minutes remaining
+    console.log('menit', min)
     if(min<10){
         min = '0' + min; //to make sure minutes < 10 is always displayed with 2 digit format
     }
